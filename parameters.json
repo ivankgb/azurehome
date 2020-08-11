@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualNetworkName": {
+            "value": "us.east.int"
+        },
+        "resourceGroup": {
+            "value": "us.east.int"
+        },
+        "addressSpaces": {
+            "value": [
+                "172.20.128.0/18"
+            ]
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "subnetCount": {
+            "value": 1
+        },
+        "subnet0_name": {
+            "value": "east.us.int"
+        },
+        "subnet0_addressRange": {
+            "value": "172.20.128.0/18"
+        },
+        "subnet0_serviceEndpoints": {
+            "value": [
+                "Microsoft.AzureActiveDirectory",
+                "Microsoft.AzureCosmosDB",
+                "Microsoft.ContainerRegistry",
+                "Microsoft.EventHub",
+                "Microsoft.KeyVault",
+                "Microsoft.ServiceBus",
+                "Microsoft.Sql",
+                "Microsoft.Storage",
+                "Microsoft.Web"
+            ]
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "firewallEnabled": {
+            "value": false
+        },
+        "bastionEnabled": {
+            "value": false
+        }
+    }
+}
